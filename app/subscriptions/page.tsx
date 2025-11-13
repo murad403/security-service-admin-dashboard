@@ -55,7 +55,7 @@ const Subscriptions = () => {
             <div className='flex justify-between items-center mb-3'>
                 <h2 className='text-2xl font-medium text-heading'>Earnings List</h2>
                 <form className="relative">
-                    <input type="search" placeholder="Search" name='search' onChange={(e) => setSeachText(e.currentTarget.value)} className='bg-gray-50 py-2 pl-10 pr-4 appearance-none outline-none border border-gray-300 rounded-xl' />
+                    <input type="search" placeholder="Search" name='search' onChange={(e) => setSeachText(e.currentTarget.value)} className='bg-gray-50 py-2 pl-10 pr-4 appearance-none outline-none border border-gray-300 rounded-xl w-[282px]' />
                     <CiSearch className="absolute left-3 top-3 text-paragraph" size={20} />
                 </form>
             </div>

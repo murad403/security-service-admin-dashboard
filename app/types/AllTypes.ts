@@ -22,3 +22,12 @@ export interface IEarningList {
   amount: number;
   status: string;
 }
+
+export interface IVerificationCenter {
+ id: string;
+ userName: string; 
+ userRole: string;
+ submittedDocs: string;
+ uploadDate: string;
+ status: "reject" | "approved" | "pending"; 
+}
