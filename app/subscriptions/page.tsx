@@ -6,6 +6,7 @@ import CustomTable from "../components/shared/CustomTable";
 import { earningList } from "../data/EarningList";
 import { Button } from "@/components/ui/button";
 import { AiOutlineDelete } from "react-icons/ai";
+import EarningInfoModal from "./EarningInfoModal";
 
 const Subscriptions = () => {
     const [searchText, setSeachText] = useState<string>("");
@@ -36,12 +37,13 @@ const Subscriptions = () => {
       case "action":
         return (
           <div className="flex items-center">
-            <button className="p-1.5 hover:bg-gray-100 rounded-md transition-colors">
+            <button onClick={()=>(document.getElementById('my_modal_2') as HTMLDialogElement).showModal()} className="p-1.5 hover:bg-gray-100 rounded-md transition-colors">
               <CiCircleInfo className="size-6 text-gray-600" />
             </button>
             <Button className="p-0.5 bg-transparent hover:bg-gray-100 rounded-md transition-colors">
               <AiOutlineDelete className="size-6 text-gray-600" />
             </Button>
+            <EarningInfoModal></EarningInfoModal>
           </div>
         );
       default:
