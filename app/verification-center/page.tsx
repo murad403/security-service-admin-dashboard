@@ -22,7 +22,7 @@ const VerificationCenter = () => {
             case "status":
                 return (
                     <div
-                        className={`px-4 py-1 w-16 flex justify-center rounded-lg text-xs font-medium capitalize ${item.status === "reject" ? "text-red-500 bg-red-100":null} ${item.status === "approved" ? "text-green-500 bg-green-100":null} ${item.status === "pending" ? "text-yellow-500 bg-yellow-100":null}`}
+                        className={`px-4 py-1 w-20 flex justify-center rounded-lg text-xs font-medium capitalize ${item.status === "reject" ? "text-red-500 bg-red-100":null} ${item.status === "approved" ? "text-green-500 bg-green-100":null} ${item.status === "pending" ? "text-yellow-500 bg-yellow-100":null}`}
                     >
                         {item?.status}
                     </div>

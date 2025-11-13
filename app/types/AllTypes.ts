@@ -31,3 +31,14 @@ export interface IVerificationCenter {
  uploadDate: string;
  status: "reject" | "approved" | "pending"; 
 }
+
+export interface IOperativeManagement {
+ id: string;
+ trId: string;
+ operativeName: string;
+ email: string;
+ subscription: string;
+ rating: number;
+ status: "active" | "suspanded";
+}
+
