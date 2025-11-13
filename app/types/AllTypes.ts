@@ -42,3 +42,34 @@ export interface IOperativeManagement {
  status: "active" | "suspanded";
 }
 
+export interface ICompanyManagement {
+ id: string;
+ trId: string;
+ companyName: string;
+ email: string;
+ subscription: string;
+ rating: number;
+ status: "active" | "suspanded";
+}
+
+export interface IJobs {
+ id: string;
+ jobId: string;
+ jobTitle: string;
+ assigned: number;
+ company: string;
+ payRate: number;
+ dateTime: string;
+ status: "pending" | "send";
+}
+
+export interface IContractList {
+ id: string;
+ contractId: string;
+ job: string;
+ companyName: string;
+ operativesName: string;
+ issueDate: string;
+ status: "signed" | "cancel" | "pending"
+}
+
