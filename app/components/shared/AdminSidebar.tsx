@@ -105,9 +105,9 @@ function DashboardSidebarContent() {
                         </div>
 
                         {/* Collapse button for desktop */}
-                        <div className={`absolute top-1 hidden md:block right-0`}>
+                        {/* <div className={`absolute top-1 hidden md:block right-0`}>
                             <SidebarTrigger />
-                        </div>
+                        </div> */}
                     </div>
 
                     <SidebarMenu
