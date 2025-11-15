@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
 import { IReferralManage, TableColumn } from "../types/AllTypes";
-import { CiCircleInfo, CiSearch } from "react-icons/ci";
-import { SlidersHorizontal } from "lucide-react";
+import { CiCircleInfo, CiSearch } from "react-icons/ci";        
 import CustomTable from "../components/shared/CustomTable";
 import { referralManageData } from "../data/ReferralManage";
-import ReferralManageInfoModal from "./ReferralManageInfoModal";
+import EditRewardInfoModal from "./EditRewardInfoModal";
+import CurrentUserEditRewardModal from "./CurrentUserEditRewardModal";
 
 const RefferalManage = () => {
   const [searchText, setSeachText] = useState<string>("");
@@ -22,10 +22,10 @@ const RefferalManage = () => {
       case "action":
         return (
           <div className="flex items-center">
-            <button className="p-1.5 hover:bg-gray-100 rounded-md transition-colors">
+            <button onClick={() => (document.getElementById('my_modal_7') as HTMLDialogElement).showModal()} className="p-1.5 hover:bg-gray-100 rounded-md transition-colors">
               <CiCircleInfo className="size-6 text-gray-600" />
             </button>
-
+            <CurrentUserEditRewardModal></CurrentUserEditRewardModal>
           </div>
         );
       default:
@@ -44,7 +44,7 @@ const RefferalManage = () => {
           <button onClick={() => (document.getElementById('my_modal_6') as HTMLDialogElement).showModal()} className='text-title bg-orange-200 rounded-xl py-1.5 px-4 font-medium flex items-center gap-2 text-[20px] cursor-pointer'>
             <span>Edit Reward</span>
           </button>
-          <ReferralManageInfoModal></ReferralManageInfoModal>
+          <EditRewardInfoModal></EditRewardInfoModal>
         </div>
       </div>
       <CustomTable columns={columns} data={referralManageData} renderCell={renderCell}

@@ -8,7 +8,6 @@ import Image from 'next/image';
 import FormHandler from '@/app/components/Form/FormHandler';
 import FormInput from '@/app/components/Form/FormInput';
 
-
 type TResetPasswordData = {
     password: string;
     confirmPassword: string;
