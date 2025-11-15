@@ -56,7 +56,7 @@ const CurrentUserEditRewardModal = () => {
                     </div>
                     <div className="relative">
                         <label className="font-medium text-[16px] text-heading block mb-2">Reward Duration</label>
-                        <select className="select h-[52px] text-heading appearance-none bg-white outline-none border border-gray-400 rounded-lg w-full" {...register("rewardDuration")}>
+                        <select className="select h-[53px] text-heading appearance-none bg-white outline-none border border-gray-400 rounded-lg w-full" {...register("rewardDuration")}>
                             <option value="10">10%</option>
                             <option value="20">20%</option>
                             <option value="30">30%</option>
