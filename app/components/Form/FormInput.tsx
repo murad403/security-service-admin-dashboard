@@ -6,7 +6,7 @@ type TInputsProps = {
     type: string;
     name: string;
     label: string; 
-    placeholder: string;
+    placeholder?: string;
 }
 
 const FormInput = ({ type, name, label, placeholder }: TInputsProps) => {

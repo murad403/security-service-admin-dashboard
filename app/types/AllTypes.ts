@@ -73,3 +73,24 @@ export interface IContractList {
  status: "signed" | "cancel" | "pending"
 }
 
+
+export interface IPayrollReports {
+ id: string;
+ companyName: string;
+ totalJobs: number;
+ totalOperatives: number;
+ totalHours: number;
+ totalPay: number;
+ status: "pending" | "send";
+}
+
+
+export interface IReferralManage {
+ id: string;
+ userId: string;
+ userName: string;
+ userEmail: string;
+ totalReferrals: number;
+ subscribed: number;
+}
+
