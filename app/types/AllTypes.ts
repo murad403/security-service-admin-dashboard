@@ -94,3 +94,9 @@ export interface IReferralManage {
  subscribed: number;
 }
 
+export interface ISubscriptionPlan {
+  id: number;
+  name: string;
+  pricePerMonth: number;
+  benefits: string[];
+}
