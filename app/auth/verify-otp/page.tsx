@@ -61,7 +61,9 @@ const VerifyOtp = () => {
                                         type="text"
                                         maxLength={1}
                                         className="size-12 text-center border-2 rounded-xl p-2.5 text-2xl border-gray-300 text-heading font-bold focus:outline-none focus:border-bg-primary"
-                                        ref={(el) => (inputRefs.current[i] = el)}
+                                        ref={(el) => {
+                                            inputRefs.current[i] = el;
+                                        }}
                                         onChange={(e) => handleChange(i, e)}
                                         onKeyDown={(e) => handleKeyDown(i, e)}
                                     />
