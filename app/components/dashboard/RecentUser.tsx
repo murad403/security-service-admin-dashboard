@@ -17,18 +17,6 @@ const RecentUser = () => {
     ];
     const renderCell = (item: IRecentUserData, columnKey: string) => {
     switch (columnKey) {
-      case "status":
-        return (
-          <div
-            className={`px-2 py-1 w-16 flex justify-center rounded-lg text-xs font-medium ${
-              item?.status === "Paid"
-                ? "bg-green-100 text-green-700"
-                : "bg-gray-200 text-gray-600"
-            }`}
-          >
-            {item?.status}
-          </div>
-        );
       case "action":
         return (
           <div className="flex items-center">
